@@ -1,0 +1,29 @@
+Alter table employee
+Add column JOB varchar(50);
+
+
+Alter table employee
+modify column JOB varchar(50) after hourly_pay;
+
+
+Select * from employee
+where hire_date > "2019-01-01" AND job = "Cleaner";
+
+
+Select * from employee
+where job = "Cleaner" OR job = "Cook";
+
+Select * from employee
+where NOT job = "Manager";
+
+
+Select * from employee
+where NOT job = "Manager" And not Job = "COOK";
+
+
+Select * from employee
+where hire_date between "2016-01-01" and "2020-01-01";
+
+
+Select * from employee
+where job in ("Cook", "cashier");
