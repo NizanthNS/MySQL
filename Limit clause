@@ -1,0 +1,9 @@
+select * from customers
+limit 2;
+
+select * from customers
+Order by last_name limit 2;
+
+
+select * from customers
+limit 20, 10;  - If you have 100 clients, it can be limit by 10 per page
