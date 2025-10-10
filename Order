@@ -1,0 +1,18 @@
+Select * from customers
+order by last_name;
+
+
+Select * from customers
+order by last_name desc;
+
+
+Select * from customers
+order by last_name ASc;
+
+
+Select * from employee
+order by hire_date;
+
+
+Select * from transactions
+order by amount, customer_id;
