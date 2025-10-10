@@ -1,0 +1,21 @@
+PRIMARY KEY - Must be unique and not be NULL and only one per table
+
+
+Create table transactions(
+	  transaction_id int Primary Key, 
+    amount Decimal(5,2),
+    transaction_date datetime Default now()
+    );
+
+Alter table transactions
+Add constraint
+primary key (transaction_id);
+
+Select * from transactions
+
+
+Insert into transactions(transaction_id, amount)
+Values (Null, 687.00);
+
+Select amount from transactions
+where transaction_id = 101;
