@@ -1,0 +1,25 @@
+Insert into transactions (amount, customer_id)
+values (50.00, Null);
+
+Select * from transactions;
+
+
+Select * from
+transactions inner join customers
+On transactions.customer_id = customers.customer_id;
+
+
+
+Select transaction_id, amount, first_name, last_name from
+transactions inner join customers
+On transactions.customer_id = customers.customer_id;
+
+
+Select transaction_id, amount, first_name, last_name from
+transactions Left join customers
+On transactions.customer_id = customers.customer_id;
+
+
+Select transaction_id, amount, first_name, last_name from
+transactions Right join customers
+On transactions.customer_id = customers.customer_id;
