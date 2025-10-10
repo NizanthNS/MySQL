@@ -1,0 +1,46 @@
+-- Stored procedure - is prepared SQL code that you can save great if there's a query that you write 		      often
+		    - reduces network traffic
+		    - increases performance
+		    - Secure, admin can grant permission to use
+		    - increase memory usage of every connections
+
+
+Delimiter $$
+create procedure get_innerjoin()
+begin
+Select distinct first_name, last_name
+from transactions
+inner join customers
+on transactions.customer_id = customers.customer_id;
+END $$
+Delimiter ;
+
+
+call get_innerjoin()
+
+
+Delimiter $$
+Create procedure find_customer(IN id INT)
+Begin
+select * from customers
+where customer_id = id;
+END $$
+Delimiter ;
+
+Drop procedure find_customer;
+
+
+Call find_customer(2);
+
+
+DELIMITER $$
+Create Procedure find_customer(IN f_name varchar(50), 
+					 In L_name Varchar(50))
+
+Begin
+Select * from customers
+where first_name = f_name AND last_name = L_name;
+END $$
+DELIMITER ;
+
+Call find_customer("Sam", "Sonny");
