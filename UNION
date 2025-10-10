@@ -1,0 +1,40 @@
+UNION combines the result of two or more select statements.
+
+
+Create table Income(
+Income_name varchar(50),
+Amount int
+);
+
+
+insert into Income
+Values  ("Orders", 100000),
+		    ("Merch", 200000),
+        ("Service", 460000);
+
+
+Create table Expenses(
+Expenses_name varchar(50),
+Amount int
+);
+
+insert into Expenses
+Values  ("Wages", 10000),
+		    ("Tax", 2000),
+        ("Repairs", 40000);
+
+
+Select * from Income
+UNION
+Select * from expenses;
+
+
+Select first_name, Last_name from employee        Do not allow duplicates
+UNION
+Select first_name, Last_name from customers;
+
+
+Select first_name, Last_name from employee  Allow Duplicates
+UNION All
+Select first_name, Last_name from customers;
+		
