@@ -1,0 +1,21 @@
+Create table employees(
+		EMP_ID INT primary key auto_increment,
+        First_Name varchar(50),
+        Last_Name varchar(50),
+        Hourly_pay INT,
+        Salary INT,
+        Job varchar(50),
+        Email varchar(50),
+        Hire_Date date);
+
+Select * from employees;
+
+Insert into employees
+Values		 (1, "Don", "Donny", 500, "Manager",	"Donny555@gmail.com",	"2025-01-19"),
+			     (2, "Ron",	"Ronny", 250, "Cook", "Ronny123@gmail.com", "2025-02-17"),
+			     (3, "Steno", "Luther", 400, "Asst.manager", "Luther595@gmail.com", "2025-02-09" ),
+			     (4, "Rio", "Milo", 350, "Janiter", "Milo223@gmail.com", "2025-03-12" );
+			     (5, "Jean", "Joel", 200, "Cleaner", "Jean455@gmail.com", "2025-03-30");
+			     (6, "John", "Blackwood", 300, "Cook",	"JohnCBlackwood@rhyta.com",	"2025-05-19"),
+			     (7, "Juan", "Weddle", 400, "Cashier",	"JuanCWeddle@armyspy.com",	"2025-12-19"),
+           (8, "Edward", "Boswell", 900, "CEO",	"EdwardCBoswell@rhyta.com",	"2025-01-01");
