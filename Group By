@@ -1,0 +1,53 @@
+- Group By - Aggregate all rows by a specific column often used with aggregate functions
+		ex: SUM(), MAX(), MIN(), AVG(), COUNT().
+
+
+
+Alter table transactions
+Add column order_date date;
+
+
+Update transactions
+set order_date = "2022-01-09"
+where transaction_id = 1004;
+
+Select * from transactions;
+
+
+Insert into transactions
+Values		(1005, 600, 4, "2022-01-10"),
+			(1006, 700, null, "2022-01-10");
+
+Select sum(amount), order_date
+from transactions
+group by order_date;
+
+Select MAX(amount), order_date
+from transactions
+group by order_date;
+
+
+Select MIN(amount), order_date
+from transactions
+group by order_date;
+
+
+Select Count(amount), order_date
+from transactions
+group by order_date;
+
+
+Select SUM(amount), Customer_id
+from transactions
+group by customer_id;
+
+Select Count(amount), Customer_id
+from transactions
+group by customer_id
+Having count(amount) > 1;
+
+
+Select Count(amount), Customer_id
+from transactions
+group by customer_id
+Having count(amount) > 1 And customer_id IS not null;
