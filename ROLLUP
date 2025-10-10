@@ -1,0 +1,21 @@
+-- ROLLUP, extension of the Group By clause
+-- Produces another row and shows the GRAND TOTAL (super-aggregate value)
+
+
+Select sum(amount), order_date
+from transactions
+group by order_date with rollup;
+
+
+Select Count(transaction_id), order_date
+from transactions
+group by order_date with rollup;
+
+
+Select Count(transaction_id) AS "# of orders", customer_id
+from transactions
+group by customer_id with rollup;
+
+Select SUM(hourly_pay) AS HOURLY_PAY, emp_id
+from employee
+Group by emp_id with rollup;
