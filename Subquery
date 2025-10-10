@@ -1,0 +1,31 @@
+-- Subquery
+-- a query within another query
+-- query(subquery)
+
+Select first_name, last_name, hourly_pay,
+	(Select avg(hourly_pay) from employee) As average_pay
+From employee;
+
+
+Select first_name, last_name, hourly_pay
+from employee
+where hourly_pay > (Select avg(hourly_pay) from employee);
+
+
+Select first_name, last_name
+from customers
+where customer_id In
+(Select customer_id
+from transactions
+where customer_id is Not null);
+
+
+Select first_name, last_name
+from customers
+where customer_id In
+(1,2,3);
+
+Select first_name, last_name
+from customers
+where customer_id Not In
+(1,2,3);
