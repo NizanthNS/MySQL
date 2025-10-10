@@ -1,0 +1,33 @@
+Self join
+
+- JOIN another copy of a table to itself
+- Used to compare rows of the same table
+- Helps to display a hierarchy of data
+
+
+Alter Table customers
+Add column referral_id INT;
+
+Select * from customers;
+
+Update customers
+SET referral_id = 1
+where customer_id = 2;
+Select * from customers;
+
+Select a.customer_id, a.first_name, a.last_name,
+		b.first_name, b.last_name from customers As a
+Inner join customers as b
+ON a.referral_id = b.customer_id;
+
+
+Select a.customer_id, a.first_name, a.last_name,
+		CONCAT(b.first_name, " ", b.last_name) AS reffered_by from customers As a
+Inner join customers as b
+ON a.referral_id = b.customer_id;
+
+
+Select a.customer_id, a.first_name, a.last_name,
+		CONCAT(b.first_name, " ", b.last_name) AS reffered_by from customers As a
+Right join customers as b
+ON a.referral_id = b.customer_id;
