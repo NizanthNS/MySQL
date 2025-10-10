@@ -1,1 +1,17 @@
+Create Table Test(
+	  my_date date,
+    my_time time,
+    my_datetime datetime
+    );
 
+
+Insert into test
+values (current_date(), current_time(), now());
+
+Select * from test;
+
+
+Insert into test
+values (current_date() -1, null, null);
+
+Select * from test;
