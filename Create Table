@@ -1,4 +1,4 @@
-Create table employees(
+Create table employee(
 		EMP_ID INT primary key auto_increment,
         First_Name varchar(50),
         Last_Name varchar(50),
@@ -8,9 +8,9 @@ Create table employees(
         Email varchar(50),
         Hire_Date date);
 
-Select * from employees;
+Select * from employee;
 
-Insert into employees
+Insert into employee
 Values		 	 (1, "Don", "Donny", 500, "Manager",	"Donny555@gmail.com",	"2025-01-19"),
 			     (2, "Ron",	"Ronny", 250, "Cook", "Ronny123@gmail.com", "2025-02-17"),
 			     (3, "Steno", "Luther", 400, "Asst.manager", "Luther595@gmail.com", "2025-02-09" ),
