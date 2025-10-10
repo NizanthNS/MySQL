@@ -1,0 +1,29 @@
+-- Views
+-- A virtual table based on the result-set of an SQL Statement
+-- The fields in a view are field from one or more real tables in the database
+-- They're not real tables, but can be interacted with as if they were
+
+create view employee_attendance as
+Select first_name, last_name
+from employee;
+
+
+Select * from employee_attendance
+Order by last_name;
+
+Drop view view_name;
+
+
+Alter table customers
+Add Column Email Varchar(50);
+
+Select * from customers;
+
+Update customers
+Set email = "Tim2000@gmail.com"
+where customer_id = 4;
+
+
+Create view customers_email AS
+Select email
+from customers;
