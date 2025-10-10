@@ -1,0 +1,56 @@
+-- Trigger - when a  event happens, do something
+	   - ex. (INSERT, UPDATE, DELETE)
+	   - Checks data, handles errors, auditing tables
+
+
+Alter table employee
+add column salary INT after hourly_pay
+
+
+Update employee
+set salary = hourly_pay * 2080;
+
+Select * from employee;
+
+
+Create Trigger before_hourly_pay_update
+Before UPDATE on employee
+FOR each row
+set new.salary = (new.hourly_pay * 2080);
+
+
+
+Create Trigger before_hourly_pay_insert
+Before Insert on employee
+FOR each row
+set new.salary = (new.hourly_pay * 2080);
+
+
+create table exp(
+	  exp_id int primary key,
+    exp_name VArchar(50),
+    exp_total INT
+);
+
+
+Insert into exp
+values		(1, "salaries", 0),
+			    (2, "supplies", 0),
+          (3, "Taxes", 0);
+            
+Select * from exp;
+
+
+Update exp
+set exp_total = (select sum(salary) from employee)
+where exp_name = "salaries";
+
+Select * from exp;
+
+
+create trigger after_salary_delete
+After Delete on employee
+for each row
+update exp
+set exp_total = exp-total - OLD.salary
+where exp_name = "salaries";
