@@ -1,0 +1,18 @@
+- - Index (BTree data structure)
+- - Indexes are used to find values within a specific column more quickly
+- - MySQL normally searches sequentially through a column
+- - The longer the column, the more expensive the operation is
+- - UPDATE takes more time, Select takes less time
+
+Show indexes from customers;
+
+Create Index last_name_idx
+on customers(last_name);
+
+
+Select * from customers
+where last_name = "Donny";
+
+
+Create index first_name_Last_name_idx
+on customers(first_name, last_name);
