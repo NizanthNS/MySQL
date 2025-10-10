@@ -1,0 +1,18 @@
+Create table transactions (
+	  transaction_id int primary key auto_increment,
+    amount Decimal(5.2)
+);
+
+Select * from transactions
+
+
+insert into transactions (amount)
+Values	(500.00),
+		    (652.00),
+        (78.00),
+		    (98.00),
+        (78.00),
+        (698.00);
+
+Alter table transactions
+auto_increment = 1000;
