@@ -1,0 +1,50 @@
+-- ON DELETE SET NULL - When a Foreign Key is deleted. replace Foreign Key with NULL
+-- ON DELETE CASCADE  - When a Foreign Key is deleted, delete row.
+
+SET foreign_key_checks = 0;
+Delete from customers
+where customer_id = 4;
+
+Select * from customers;
+
+
+Create table transactions (
+	  transaction_id int primary key auto_increment,
+    amount Decimal(5.2),
+    customer_id int,
+    Foreign key(customer_id) references customers(customer_id)
+	ON DELETE SET NULL
+);
+
+
+Alter table transactions
+Drop foreign key FK_customer_id;
+
+
+Alter table transactions
+ADD constraint fk_customer_id
+foreign key(customer_id) references customers(customer_id)
+ON delete set null;
+
+
+delete from customers
+where customer_id = 4;
+
+Select * from transactions;
+
+
+insert into customers
+values(4, "Genos", "S", 2, "Genos098@gmail.com");
+
+Select * from customers;
+
+
+update transactions
+set customer_id = 4
+where transaction_id = 1005;
+
+
+Alter table transactions
+ADD constraint fk_customer_id
+foreign key(customer_id) references customers(customer_id)
+ON delete cascade;
