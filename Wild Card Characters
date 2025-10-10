@@ -1,0 +1,19 @@
+select * from employee
+where first_name Like "E%"
+
+
+select * from employee
+where hire_date Like "2020%";
+
+select * from customers
+where Last_name Like "%y";
+
+
+select * from employee
+where Job Like "_ook";
+
+select * from employee
+where hire_date Like "____-05-__";
+
+select * from employee
+where job Like "_a%";
