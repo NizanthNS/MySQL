@@ -11,7 +11,7 @@ Create table employees(
 Select * from employees;
 
 Insert into employees
-Values		 (1, "Don", "Donny", 500, "Manager",	"Donny555@gmail.com",	"2025-01-19"),
+Values		 	 (1, "Don", "Donny", 500, "Manager",	"Donny555@gmail.com",	"2025-01-19"),
 			     (2, "Ron",	"Ronny", 250, "Cook", "Ronny123@gmail.com", "2025-02-17"),
 			     (3, "Steno", "Luther", 400, "Asst.manager", "Luther595@gmail.com", "2025-02-09" ),
 			     (4, "Rio", "Milo", 350, "Janiter", "Milo223@gmail.com", "2025-03-12" );
