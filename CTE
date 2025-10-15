@@ -1,0 +1,45 @@
+-- A CTE is a temporary result set can referred within a SELECT, INSERT, UPDATE, or DELETE statement.
+
+-- Defined using the WITH keyword.
+-- Makes queries more readable, especially complex ones.
+-- Can be recursive or non-recursive.
+-- Lives only for the duration of the query.
+
+
+
+SELECT 
+    Gender,
+    AVG(Salary) AS AVG_Sal,
+    MAX(Salary) AS MAX_Sal,
+    MIN(Salary) AS MIN_Sal,
+    COUNT(Salary) AS Count_Sal,
+    AVG(AVG(Salary)) OVER() AS Overall_Avg
+FROM employee
+GROUP BY Gender;
+
+With CTE AS
+(
+Select  Gender, 
+	AVG(Salary) AVG_sal, 
+	MAX(Salary) MAX_Sal, 
+	MIN(Salary) MIN_Sal, 
+	COUNT(Salary) Count_Sal
+From employee
+group by Gender
+)
+Select AVG(AVG_Sal)
+From CTE
+;
+
+With CTE(Gender, AVG_Sal, MAX_Sal, MIN_Sal, Count_Sal) AS
+(
+Select  Gender, 
+	AVG(Salary) AVG_sal, 
+	MAX(Salary) MAX_Sal, 
+	MIN(Salary) MIN_Sal, 
+	COUNT(Salary) Count_Sal
+From employee
+group by Gender
+)
+Select * From CTE
+;
