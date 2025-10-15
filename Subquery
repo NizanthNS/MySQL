@@ -29,3 +29,7 @@ Select first_name, last_name
 from customers
 where customer_id Not In
 (1,2,3);
+
+Select MAX(Salary) As Second_Highest_Salary
+from employee
+where Salary < (Select MAX(Salary) from employee);
