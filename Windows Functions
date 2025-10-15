@@ -1,0 +1,33 @@
+Alter table employee
+Add Gender varchar(20)
+After last_name;
+
+
+Update employee
+Set Gender = "Male"
+where EMP_ID = 1;
+
+Select * from employee;
+
+
+SELECT gender, COUNT(*) AS total_employees
+FROM employee
+GROUP BY gender
+ORDER BY gender ASC;
+
+SELECT 
+    Emp_ID,
+    First_name,
+    Gender,
+    Salary,
+    AVG(Salary) OVER(PARTITION BY Gender) AS avg_gender_salary
+FROM employee;
+
+
+SELECT 
+    First_name,
+    Salary,
+    ROUND(
+        salary * 100.0 / SUM(salary) OVER(), 2
+    ) AS percent_of_total
+FROM employee;
