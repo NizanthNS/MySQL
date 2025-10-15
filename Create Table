@@ -10,7 +10,7 @@ Create table employee(
 
 Select * from employee;
 
-Insert into employee
+Insert into employee(EMP_ID, First_name, Last_name, Hourly_pay, Job, Email, Hire_Date)
 Values		 	 (1, "Don", "Donny", 500, "Manager",	"Donny555@gmail.com",	"2025-01-19"),
 			     (2, "Ron",	"Ronny", 250, "Cook", "Ronny123@gmail.com", "2025-02-17"),
 			     (3, "Steno", "Luther", 400, "Asst.manager", "Luther595@gmail.com", "2025-02-09" ),
