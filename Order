@@ -17,6 +17,10 @@ order by hire_date;
 Select * from transactions
 order by amount, customer_id;
 
+SELECT first_name, last_name, Job, salary
+FROM employee
+ORDER BY salary DESC;
+
 Alter table employee
 modify column Email varchar(50)
 after Last_name;
