@@ -15,5 +15,5 @@ FROM (
     SELECT first_name, last_name, salary,
            DENSE_RANK() OVER (ORDER BY salary DESC) AS Rank_num
     FROM employee
-) ranked
+) ranked -- Alias
 WHERE rank_num = 5;  -- Change this number for Nth highest
