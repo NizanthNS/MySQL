@@ -29,12 +29,12 @@ UNION
 Select * from expenses;
 
 
-Select first_name, Last_name from employee        Do not allow duplicates
+Select first_name, Last_name from employee        -- Do not allow duplicates
 UNION
 Select first_name, Last_name from customers;
 
 
-Select first_name, Last_name from employee  Allow Duplicates
+Select first_name, Last_name from employee  -- Allow Duplicates
 UNION All
 Select first_name, Last_name from customers;
 		
