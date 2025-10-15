@@ -51,3 +51,9 @@ Select Count(amount), Customer_id
 from transactions
 group by customer_id
 Having count(amount) > 1 And customer_id IS not null;
+
+
+SELECT gender, COUNT(*) AS total_employees
+FROM employee
+GROUP BY gender
+ORDER BY gender ASC;
