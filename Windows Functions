@@ -1,3 +1,22 @@
+select Count(amount)
+from transactions;
+
+select MAX(amount) As maximum
+from transactions;
+
+select Min(amount) As minimum
+from transactions;
+
+select Avg(amount) As Average
+from transactions;
+
+
+select Sum(amount) As Sum
+from transactions;
+
+Select Concat(first_name," ", last_name) As Full_Name from
+employee;
+
 Alter table employee
 Add Gender varchar(20)
 After last_name;
