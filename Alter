@@ -4,3 +4,11 @@ Rename Column Dept_id TO Department_id;
 
 Alter table employee
 Add column JOB varchar(50);
+
+
+Alter table employee
+modify column JOB varchar(50) after hourly_pay;
+
+
+Alter table employee
+Drop column JOB;
