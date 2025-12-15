@@ -1,0 +1,2 @@
+Alter Table employee_salary
+Rename Column Dept_id TO Department_id;
