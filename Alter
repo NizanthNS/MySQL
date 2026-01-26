@@ -12,3 +12,9 @@ modify column JOB varchar(50) after hourly_pay;
 
 Alter table employee
 Drop column JOB;
+
+
+SET SQL_SAFE_UPDATES = 0;
+
+
+SET SQL_SAFE_UPDATES = 1;
