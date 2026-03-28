@@ -18,3 +18,8 @@ SET SQL_SAFE_UPDATES = 0;
 
 
 SET SQL_SAFE_UPDATES = 1;
+
+
+UPDATE Customers
+SET City = 'Marthandam'
+WHERE Customer_ID = 101;
