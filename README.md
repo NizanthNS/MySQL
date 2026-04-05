@@ -56,7 +56,7 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/NizanthNS/Demo_SQL.git
+   git clone https://github.com/NizanthNS/MySQL.git
    ```
 
 2. Open SQL files in your preferred database tool
