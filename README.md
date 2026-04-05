@@ -36,6 +36,8 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 * JOIN operations (INNER, LEFT, RIGHT)
 * GROUP BY and Aggregations
 * Subqueries
+* Window Functions (RANK(), DENSE RANK())
+* CTE (Common Table Expressions)
 * Data filtering and sorting
 * Query optimization basics
 
@@ -44,7 +46,7 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 🛠️ Tools & Technologies
 
 * SQL (Structured Query Language)
-* Relational Databases (MySQL / PostgreSQL / SQLite)
+* Relational Databases (MySQL)
 * Git & GitHub for version control
 
 ---
