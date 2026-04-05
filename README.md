@@ -36,7 +36,7 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 * JOIN operations (INNER, LEFT, RIGHT)
 * GROUP BY and Aggregations
 * Subqueries
-* Window Functions (RANK(), DENSE RANK())
+* Window Functions (RANK(), DENSE RANK(), ROW_NUMBER())
 * CTE (Common Table Expressions)
 * Data filtering and sorting
 * Query optimization basics
