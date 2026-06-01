@@ -190,7 +190,6 @@ CTE2 AS (
 	SELECT *,
 		   DATEDIFF(Training_Date, Previous_Date) AS Days_Gap
 	FROM CTE
-    WHERE Previous_Date IS NOT NULL
 )
 SELECT Emp_ID, Employee_Name,
 	   MIN(Training_Date) AS First_Training_Date,
