@@ -65,7 +65,3 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 This is a personal learning project, but suggestions and improvements are welcome!
 
 ---
-
-📬 Contact
-
-Feel free to connect for collaboration or feedback.
