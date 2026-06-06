@@ -47,21 +47,7 @@ Each file represents a separate SQL task or problem, organized sequentially for 
 
 * SQL (Structured Query Language)
 * Relational Databases (MySQL)
-* Git & GitHub for version control
-
----
-
-🚀 How to Use
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/NizanthNS/MySQL.git
-   ```
-
-2. Open SQL files in your preferred database tool
-
-3. Run queries and explore results
+* GitHub
 
 ---
 
