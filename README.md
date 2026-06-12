@@ -1,67 +1,128 @@
-📊 SQL Practice & Analysis Project
+# 📊 SQL Practice & Analysis
 
-📌 Overview
+A collection of SQL exercises, challenges, and analytical queries completed as part of my daily SQL learning journey.
 
-This repository contains a collection of SQL scripts designed to practice and demonstrate core database concepts. The project focuses on writing efficient queries, solving real-world data problems, and building a strong foundation in SQL for data analysis.
-
----
-
-🎯 Objectives
-
-* Practice fundamental to advanced SQL queries
-* Improve data extraction and transformation skills
-* Build a structured SQL portfolio for job applications
-* Demonstrate problem-solving using relational databases
+The goal of this repository is to strengthen SQL fundamentals, explore advanced querying techniques, and build a portfolio that demonstrates practical problem-solving skills using relational databases.
 
 ---
 
-📂 Project Structure
+## 🎯 Learning Goals
 
-```
+* Develop strong SQL querying skills through consistent daily practice
+* Solve real-world data analysis problems
+* Master database concepts from beginner to advanced levels
+* Improve query efficiency and readability
+* Build a public portfolio showcasing SQL proficiency
+
+---
+
+## 📂 Repository Structure
+
+```text
 Demo_SQL/
 │── D01.sql
 │── D02.sql
 │── D03.sql
 │── ...
-│── ...
+```
+
+Each file represents a standalone SQL exercise or challenge completed as part of a structured learning process.
+
+Topics gradually increase in difficulty, covering both fundamental and advanced SQL concepts.
+
 ---
 
-Each file represents a separate SQL task or problem, organized sequentially for clarity and easy navigation.
+## 🧠 SQL Concepts Covered
 
----
+### Fundamental Queries
 
-🧠 Skills Demonstrated
+* SELECT statements
+* WHERE filtering
+* ORDER BY sorting
+* LIMIT and DISTINCT
 
-* SELECT, WHERE, ORDER BY
-* JOIN operations (INNER, LEFT, RIGHT)
-* GROUP BY and Aggregations
+### Aggregations & Grouping
+
+* COUNT(), SUM(), AVG(), MIN(), MAX()
+* GROUP BY
+* HAVING
+
+### Joins
+
+* INNER JOIN
+* LEFT JOIN
+* RIGHT JOIN
+* Self Joins
+
+### Advanced SQL
+
 * Subqueries
-* Window Functions (RANK(), DENSE RANK(), ROW_NUMBER())
-* CTE (Common Table Expressions)
-* Data filtering and sorting
-* Query optimization basics
+* Common Table Expressions (CTEs)
+* Window Functions
+
+  * ROW_NUMBER()
+  * RANK()
+  * DENSE_RANK()
+  * LAG()
+  * LEAD()
+* Case Expressions
+* Date Functions
+
+### Analytical Patterns
+
+* Ranking Problems
+* Running Totals
+* Cohort Analysis
+* Gap & Island Problems
+* Consecutive Date Streaks
+* Data Cleaning Techniques
 
 ---
 
-🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
-* SQL (Structured Query Language)
-* Relational Databases (MySQL)
-* GitHub
-
----
-
-📈 Future Improvements
-
-* Add real-world datasets
-* Include advanced SQL problems
-* Add explanations for each query
-* Optimize queries for performance
+* SQL
+* MySQL
+* Git & GitHub
 
 ---
 
-🙌 Contribution
+## 📈 Progress Tracking
 
-This is a personal learning project, but suggestions and improvements are welcome!
+This repository is updated regularly with new SQL exercises and analytical challenges.
+
+Current focus areas include:
+
+* Window Functions
+* Advanced CTEs
+* Query Optimization
+* Analytical SQL Patterns
+* Real-world Business Scenarios
 
 ---
+
+## 🚀 Future Enhancements
+
+* Add sample datasets for reproducibility
+* Include detailed explanations for solutions
+* Provide multiple approaches to solving problems
+* Add performance optimization examples
+* Create categorized folders by topic and difficulty
+
+---
+
+## 🤝 Feedback & Contributions
+
+This is a personal learning repository, but feedback, suggestions, and alternative solutions are always appreciated.
+
+If you have a more efficient approach to a query, feel free to share it.
+
+---
+
+## 📌 Note
+
+The primary purpose of this repository is learning and continuous improvement. As new concepts are learned, earlier solutions may be revisited and refined to reflect better SQL practices and optimization techniques.
+
+🔥 Current Streak: Daily SQL Practice
+
+This repository is part of my commitment to solving SQL problems consistently and improving my analytical thinking through hands-on practice.
