@@ -12,7 +12,6 @@ The goal of this repository is to strengthen SQL fundamentals, explore advanced 
 * Solve real-world data analysis problems
 * Master database concepts from beginner to advanced levels
 * Improve query efficiency and readability
-* Build a public portfolio showcasing SQL proficiency
 
 ---
 
