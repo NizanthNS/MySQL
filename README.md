@@ -19,9 +19,9 @@ The goal of this repository is to strengthen SQL fundamentals, explore advanced 
 
 ```text
 Demo_SQL/
-│── D01.sql
-│── D02.sql
-│── D03.sql
+│── D001.sql
+│── D002.sql
+│── D003.sql
 │── ...
 ```
 
