@@ -2,6 +2,8 @@
 -- A customer's cohort month is the month of
 -- their first booking date.
 
+-- Example
+
 WITH CTE AS (
 	SELECT C.Customer_ID,
 		   MIN(M.Booking_Date) AS First_Booking_Date
