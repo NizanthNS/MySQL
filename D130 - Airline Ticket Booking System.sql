@@ -1,6 +1,6 @@
 USE Daily_SQL;
 
--- DATABASE: Airline Ticket Booking System
+-- DATASET: Airline Ticket Booking System
 
 CREATE TABLE Customers (
     Customer_ID INT PRIMARY KEY,
