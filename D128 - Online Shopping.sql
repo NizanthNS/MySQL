@@ -1,6 +1,6 @@
 USE Daily_SQL;
 
--- DATABASE: Online Shopping
+-- DATASET: Online Shopping
 
 CREATE TABLE Customers (
     Customer_ID INT PRIMARY KEY,
