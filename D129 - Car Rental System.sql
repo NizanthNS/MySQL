@@ -1,6 +1,6 @@
 USE Daily_SQL;
 
--- DATABASE: Car Rental System
+-- DATASET: Car Rental System
 
 CREATE TABLE Customers (
     Customer_ID INT PRIMARY KEY,
