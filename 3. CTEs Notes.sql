@@ -33,3 +33,10 @@ WITH CTE AS (
 SELECT *
 FROM CTE
 WHERE Total_Order > 1000;
+
+-- Why do we use CTEs?
+-- Improve readability
+-- Break complex queries into steps
+-- Reuse intermediate results
+-- Make debugging easier
+-- Build multi-step analytical queries
