@@ -2,6 +2,9 @@
 -- A customer's cohort month is the month of
 -- their first booking date.
 
+-- A cohort is a group of users who share the same starting event during the same time period. 
+-- A cohort month is the month in which that starting event happened.
+
 -- Example
 
 WITH CTE AS (
