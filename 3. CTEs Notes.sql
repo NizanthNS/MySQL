@@ -3,6 +3,8 @@
 
 -- It helps you break a complex query into smaller, easier-to-read steps.
 
+-- A CTE is a temporary named query used to simplify complex SQL statements.
+
 -- Example
 
 WITH CTE AS (
