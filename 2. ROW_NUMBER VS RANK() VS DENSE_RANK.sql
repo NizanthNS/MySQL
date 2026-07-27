@@ -123,3 +123,10 @@ RANK()
 DENSE_RANK()
 - Ties allowed
 - No gaps
+
+-- A window function performs a calculation across a set of related rows while keeping every individual row in the result.
+
+-- Unlike GROUP BY, it does not collapse multiple rows into one.
+
+-- In Short
+-- A window function performs calculations across a group of related rows without reducing the number of rows returned.
