@@ -10,3 +10,26 @@ WITH CTE AS (
 )
 SELECT *
 FROM CTE;
+
+-- Without CTE:
+
+SELECT *
+FROM (
+    SELECT Customer_ID,
+           SUM(Order_Amount) AS Total_Order
+    FROM Orders
+    GROUP BY Customer_ID
+) A
+WHERE Total_Order > 1000;
+
+-- With CTE:
+
+WITH CTE AS (
+    SELECT Customer_ID,
+           SUM(Order_Amount) AS Total_Order
+    FROM Orders
+    GROUP BY Customer_ID
+)
+SELECT *
+FROM CTE
+WHERE Total_Order > 1000;
