@@ -79,7 +79,7 @@ SELECT C.Customer_ID, C.Customer_Name,
 FROM Customers C
 INNER JOIN Delivery_Orders D
 	ON C.Customer_ID = D.Customer_ID
-GROUP BY Customer_ID, Customer_Name;
+GROUP BY C.Customer_ID, C.Customer_Name;
 
 
 -- Q2
@@ -114,7 +114,7 @@ WITH CTE AS (
 	FROM Customers C
 	INNER JOIN Delivery_Orders D
 		ON C.Customer_ID = D.Customer_ID
-	GROUP BY Customer_ID, Customer_Name
+	GROUP BY C.Customer_ID, C.Customer_Name
 ),
 CTE2 AS (
 	SELECT *,
@@ -255,7 +255,7 @@ WITH CTE AS (
 	FROM Customers C
 	INNER JOIN Delivery_Orders D
 		ON C.Customer_ID = D.Customer_ID
-	GROUP BY Customer_ID, Customer_Name, C.City
+	GROUP BY C.Customer_ID, C.Customer_Name, C.City
 )
 SELECT Customer_ID, Customer_Name, City, Total_Order_Amount
 FROM (
